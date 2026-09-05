@@ -1,0 +1,37 @@
+body{
+    background-color: burlywood;
+    /* font-family: Arial; sans-serif */
+    /* font-family: 'Playfair Display', serif */
+    font-family: Garamond, serif;
+}
+
+h1{
+    color: brown;
+    font-size: 60px;
+    font-family: Arial, Helvetica, serif;
+    text-align: center;
+}
+
+h2{
+    color: brown;
+    font-size: 30;
+    font-family: Arial, Helvetica, serif;
+    text-align: left;
+}
+
+h3{
+    color: rgb(19, 16, 196);
+    font-size: 20x;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+
+.desc{
+    color: black;
+    font-size: 15x;
+    font-family: Arial, Helvetica, serif;
+    text-align:left;
+    font-style: italic;
+    font-weight: 100;
+}
+
