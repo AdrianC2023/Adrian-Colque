@@ -5,33 +5,78 @@ body{
     font-family: Garamond, serif;
 }
 
-h1{
+.titulo{
     color: brown;
     font-size: 60px;
     font-family: Arial, Helvetica, serif;
     text-align: center;
+    background-color: yellowgreen;
 }
 
-h2{
+.subtitulo{
     color: brown;
     font-size: 30;
     font-family: Arial, Helvetica, serif;
     text-align: left;
 }
 
-h3{
+.subtitulo_h3{
     color: rgb(19, 16, 196);
     font-size: 20x;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
 }
 
-.desc{
+.desc{ 
     color: black;
     font-size: 15x;
     font-family: Arial, Helvetica, serif;
     text-align:left;
     font-style: italic;
     font-weight: 100;
+    background-color: rebeccapurple;
 }
 
+header{
+    background-color: aliceblue;
+}
+
+section{
+    background-color: rgb(43, 117, 202);
+}
+
+#Puntos_de_interes{
+    font-style: oblique;
+}
+
+#Museos{
+    font-style: oblique;
+}
+
+/* #Gastronomía{
+    color: black;
+    font-family: Arial, Helvetica, serif;
+    text-align-last: right;
+    font-style: italic;
+} */
+
+footer{
+    background-color: rgb(150, 142, 142);
+}
+
+img{
+    width: 450px;
+    height: 200px;
+    /* PROBAR ESCALAR */
+    /* scale: 0.75; */
+}
+
+nav{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+table{
+    background-color: deeppink;
+}
+}
