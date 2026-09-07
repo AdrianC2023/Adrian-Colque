@@ -41,9 +41,12 @@ header{
     background-color: aliceblue;
 }
 
-section{
+.card{
     background-color: rgb(43, 117, 202);
-}
+    border: 20px;
+    padding: 10px;  
+    margin: 30px;
+} 
 
 #Puntos_de_interes{
     font-style: oblique;
@@ -79,4 +82,13 @@ nav{
 table{
     background-color: deeppink;
 }
+
+/* #Puntos_de_interes{
+    background-color: darkgoldenrod;
+    
+} */
+
+.card{
+    display: inline-block;
+    justify-content: space-around;
 }
