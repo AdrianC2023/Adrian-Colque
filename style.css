@@ -92,3 +92,7 @@ table{
     display: inline-block;
     justify-content: space-around;
 }
+
+.oculto{
+    display: none;
+}
