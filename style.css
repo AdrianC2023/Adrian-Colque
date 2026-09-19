@@ -4,7 +4,6 @@ body{
     /* font-family: 'Playfair Display', serif */
     font-family: Garamond, serif;
 }
-
 .titulo{
     color: brown;
     font-size: 60px;
@@ -12,22 +11,18 @@ body{
     text-align: center;
     background-color: rgb(170, 153, 117);
 }
-
-.subtitulo{
-    color: brown;
-    font-size: 30;
-    font-family: Arial, Helvetica, serif;
-    text-align: left;
+.img-principal{
+    width: 100%;
+    height: 10%
 }
-
-.subtitulo_h3{
-    color: rgb(19, 16, 196);
-    font-size: 20x;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: left;
+nav{
+    background-color: cornflowerblue;
+    text-align: center;
 }
-
-.desc{ 
+table{
+    background-color: deeppink;
+}
+.descripcion{ 
     color: black;
     font-size: 15x;
     text-align:left;
@@ -35,9 +30,12 @@ body{
     font-weight: 100;
     background-color: rgb(188, 170, 206);
 }
-
-header{
-    background-color: aliceblue;
+.seccion-cards article h3{
+    color: rgb(10, 231, 29);
+    font-size: 30;
+    font-family: Arial, Helvetica, serif;
+    text-align: left;
+    background-color: rgb(63, 211, 179);
 }
 
 .card{
@@ -47,59 +45,22 @@ header{
     margin: 20px;
 } 
 
-#Puntos_de_interes{
-    font-style: oblique;
-}
-
-/* #Museos{
-    font-style: oblique;
-} */
-
-/* #Gastronomía{
-    color: black;
-    font-family: Arial, Helvetica, serif;
-    text-align-last: right;
-    font-style: italic;
-} */
-
-footer{
-    background-color: rgb(150, 142, 142);
-}
-
-.img-principal{
-    width: 100%;
-    height: 10%
-    
-}
-
-/*.img-card{*/
-.card img{
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    object-position: center;
-}
-
-nav{
-    background-color: cornflowerblue;
-    text-align: center;
-}
-
-table{
-    background-color: deeppink;
-}
-
-/* #Puntos_de_interes{
-    background-color: darkgoldenrod;
-    
-} */
-
 .card{
     width: 25%;
     height: 350px;
     /*overflow: hidden;*/
     display: inline-block;
     justify-content: space-around;
+}
+    .card img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    }
+
+footer{
+    background-color: rgb(150, 142, 142);
 }
 
 .oculto{
