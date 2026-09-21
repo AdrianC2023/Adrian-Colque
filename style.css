@@ -59,6 +59,21 @@ table{
     object-position: center;
     }
 
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    width: 400px;
+    margin:50px auto;
+}
+input,textarea{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+button{
+    padding: 5px;
+    margin-top: 10px;
+}
 footer{
     background-color: rgb(150, 142, 142);
 }

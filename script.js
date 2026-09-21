@@ -53,3 +53,20 @@ aumentar.addEventListener("click", function() {
         descrip[0].style.fontSize = tamañoFuente + "px";
     }
 });
+
+
+
+//Entrega 3 parte 3
+
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(event)){
+    const nombre = document.getElementById("nombre").value.trim();
+    const emaIl = document.getElementById("email").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+    const resultado = document.getElementById("resultado");
+
+    if (nombre==="" || email==="" || mensaje==="")
+        resultado.textContent="¡Completa todos los campos!"
+
+}
