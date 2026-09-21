@@ -4,7 +4,7 @@ body{
     /* font-family: 'Playfair Display', serif */
     font-family: Garamond, serif;
 }
-.titulo{
+#titulo{
     color: brown;
     font-size: 60px;
     font-family: Arial, Helvetica, serif;
