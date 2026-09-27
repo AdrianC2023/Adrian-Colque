@@ -55,18 +55,31 @@ aumentar.addEventListener("click", function() {
 });
 
 
-
 //Entrega 3 parte 3
 
 const formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit", function(event)){
+formulario.addEventListener("submit", function(event){
+    
     const nombre = document.getElementById("nombre").value.trim();
-    const emaIl = document.getElementById("email").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const fecnac = document.getElementById("fecnac").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
     const resultado = document.getElementById("resultado");
+    const infoedad = document.getElementById("infoedad");
+    const fecactual = new Date();
+    event.preventDefault();
+    
 
-    if (nombre==="" || email==="" || mensaje==="")
-        resultado.textContent="¡Completa todos los campos!"
-
-}
+    if (nombre==="" || email==="" || fecnac==="" || mensaje===""){
+        resultado.textContent="¡Completa todos los campos!";
+    } else {
+        let años = fecactual.getFullYear() - new Date(fecnac).getFullYear();
+        if(fecactual.getMonth() < new Date(fecnac).getMonth()){ //falta validar si es el mismo mes y el dia es menor
+            años--;
+        }
+        infoedad.textContent="Tu edad es: " + años + " años";
+        resultado.textContent="Enviado correctamente";
+        formulario.reset();
+    }    
+});
