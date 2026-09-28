@@ -34,15 +34,22 @@ body{
     font-size: 60px;
     font-family: Arial, Helvetica, serif;
     text-align: center;
-    background-color: rgb(170, 153, 117);
+    background-color: rgb(235, 86, 111);
 }
 .img-principal{
     width: 100%;
     height: 10%
 }
 nav{
-    background-color: cornflowerblue;
+    background-color: rgb(151, 5, 5);
     text-align: center;
+    border:5px solid rgb(221, 68, 68);
+    border-radius: 10px;
+    display: inline;
+}
+a:hover{
+    color: red;
+    cursor:pointer;
 }
 table{
     background-color: deeppink;
@@ -54,6 +61,10 @@ table{
     font-style: italic;
     font-weight: 100;
     background-color: rgb(188, 170, 206);
+}
+
+.seccion-cards{
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
 }
 .seccion-cards article h3{
     color: rgb(10, 231, 29);
@@ -82,6 +93,7 @@ table{
     height: 50%;
     object-fit: cover;
     object-position: center;
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
     }
 
 form{
