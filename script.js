@@ -83,3 +83,14 @@ formulario.addEventListener("submit", function(event){
         formulario.reset();
     }    
 });
+
+//Entrega 4 parte 4 (Modo oscuro)
+
+const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+        toggleBtn.textContent = "Cambiar a Modo Claro";}
+    else{
+        toggleBtn.textContent = "Cambiar a Modo Oscuro";}
+});
