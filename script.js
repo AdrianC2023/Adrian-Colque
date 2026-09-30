@@ -5,7 +5,7 @@ function alternarInformacion(event) {
     const infoExtra = boton.previousElementSibling;
     infoExtra.classList.toggle('oculto');
     if (infoExtra.classList.contains('oculto')){
-        boton.textContent = '[ Ver mas ]';
+        boton.textContent = '[ Ver más ]';
     } else {
         boton.textContent = '[ Ver menos ]';
     }
@@ -13,7 +13,7 @@ function alternarInformacion(event) {
 
 botonesVerMas.forEach(function(boton){
     boton.addEventListener('click', alternarInformacion);
-})
+});
 
 const boton = document.getElementById('botonCambiar');
 const titulo = document.getElementById('titulo');
