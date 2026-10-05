@@ -114,3 +114,5 @@ btn.addEventListener("click",function(){
         behavior: "smooth"
     });
 });
+
+//Entrega 3 ejercicio 3 (Carrousel)

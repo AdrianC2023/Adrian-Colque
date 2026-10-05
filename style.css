@@ -91,8 +91,10 @@ table{
     box-shadow: 5px 5px 15px rgb(167, 114, 35);
     /* background-color: rgb(240, 238, 215); */
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.seccion-cards h2{
+#Puntos-de-interes{
     padding: 10px;
     margin: auto;
 }
@@ -110,8 +112,8 @@ table{
 
     padding: 8px;  
     margin: auto;
-    display: inline-block;
-    align-items: stretch;
+
+    align-items: center;
     width: 20%;
     height: 350px;
     overflow: hidden;
@@ -176,3 +178,92 @@ footer{
 .oculto {
     display: none;
 }
+
+/* Entrega 3 ejercicio 3 (Carrousel) */
+
+.carrusel-section{
+    margin: 25px 0;
+}
+
+.carrusel-container{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0.25);
+    background-color: #000000;
+}
+
+.carrusel-slides{
+    position: relative;
+    height: 450px;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.carrusel-caption h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.carrusel-caption p{
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.carrusel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.carrusel-btn:hover{
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrusel-btn.prev { left: 15px;}
+.carrusel-btn.next { right: 15px;}
