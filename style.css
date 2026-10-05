@@ -154,8 +154,22 @@ button{
     padding:5px;
     margin-top: 10px;
 }
+
+#volverArriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(22, 21, 21);
+}
+
 footer{
-    background-color: rgb(150, 142, 142);
+    background-color: rgb(43, 38, 38);
     font-family: var(--font-principal);
 }
 
