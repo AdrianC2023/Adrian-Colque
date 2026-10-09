@@ -175,7 +175,19 @@ table{
     font-size: 30px;
 }
 
-.seccion-cards article h3{
+.seccion-cards {
+    justify-content: space-evenly;
+
+}
+
+.seccion-cards article {
+    
+    /* display: grid; */
+    align-items: flex-start;
+
+}
+.seccion-cards article h3 {
+    text-align: left;
     margin: auto;
     padding: 1px;
     color: rgb(3, 3, 3);
@@ -189,18 +201,19 @@ table{
 .card{
 
     padding: 8px;
-    margin: auto;
+    margin-top: 10px;
 
-    align-items: center;
+    /* align-items: center; */
     width: 20%;
     height: 350px;
     overflow: hidden;
-    justify-content:space-around;
+    /* justify-content:space-around; */
     border-radius: 5%;
     font-family: var(--font-principal);
 }
     .card img{
-    padding: 1px;
+    padding: 0px;
+    margin-top: 12px;
     width: 85%;
     height: 60%;
     object-fit: cover;
