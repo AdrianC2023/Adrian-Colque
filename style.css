@@ -253,10 +253,18 @@ textarea{
     font-family: var(--font-principal);
 }
 
-#theme-toggle {
+#theme-toggle-nav {
     width: 30px;
     height: 30px;
-    bottom: px;
+
+}
+#theme-toggle {
+    width: 35px;
+    height: 35px;
+    bottom: 70px;
+    position: fixed;
+    right: 40px;
+    cursor: pointer;
 }
 
 button{
@@ -393,3 +401,53 @@ footer{
 
 .carrousel-btn.prev { left: 15px;}
 .carrousel-btn.next { right: 15px;}
+
+/* Imagen fija */
+
+.portada {
+    background-image: url('images/full-monumento.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.portada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(210, 105, 30, 0.4);
+}
+
+.portada-contenido {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 0 20px;
+}
+.portada-contenido h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    font-family: var(--font-principal);
+}
+.portada-contenido p {
+    font-size: 2.5rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    font-family: var(--font-principal);
+}
+
+.top-controls {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 2rem;
+}

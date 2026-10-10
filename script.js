@@ -86,6 +86,7 @@ formulario.addEventListener("submit", function(event){
 
 //Entrega 4 parte 4 (Modo oscuro)
 
+const toggleBtnNav = document.getElementById("theme-toggle-nav");
 const toggleBtn = document.getElementById("theme-toggle");
 
 toggleBtn.addEventListener("click", function() {
@@ -97,9 +98,20 @@ toggleBtn.addEventListener("click", function() {
     }
 });
 
+toggleBtnNav.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+    if(document.body.classList.contains("dark-mode")){
+        toggleBtnNav.innerHTML = '<img src="images/light_mode.svg" style="width: 100%; height: 100%;" alt="Modo Claro">';
+    } else {
+        toggleBtnNav.innerHTML = '<img src="images/dark_mode.svg" style="width: 100%; height: 100%;" alt="Modo Oscuro">';
+    }
+});
+
 //Entrega 3 ejercicio 2 (boton vovler arriba)
 
 const btn = document.getElementById("volverArriba");
+const btnNav = document.getElementById("theme-toggle");
+
 
 window.addEventListener("scroll",function(){
     if (window.scrollY > 300){
@@ -109,12 +121,14 @@ window.addEventListener("scroll",function(){
     }
 });
 
+
 btn.addEventListener("click",function(){
     window.scrollTo({
         top:0,
         behavior: "smooth"
     });
 });
+
 
 //Entrega 3 ejercicio 3 (Carrousel)
 const slides = document.querySelectorAll('.slide');
