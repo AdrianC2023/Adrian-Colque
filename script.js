@@ -26,7 +26,7 @@ boton.addEventListener('click', function() {
     } else if (contador === 2) {
         titulo.textContent = "Patrimonio de la Humanidad";
     } else if (contador === 3) {
-        titulo.textContent = "Que disfruten";
+        titulo.textContent = "Quebrada de Humahuaca";
     }
 });
 

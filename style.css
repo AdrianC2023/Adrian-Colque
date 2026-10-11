@@ -41,24 +41,22 @@ header{
     position: relative;
 }
 
-#titulo-pricipal{
+/* #titulo-pricipal{
     align-items: center;
     text-align: center;
     width: 100%;
     padding: 0px 0px 0px 180px;
-
-
-}
+} */
 
 #titulo-pricipal h1{
-  align-items: center;
+    align-items: center;
     text-align: center;
     width: 100%;
-
 }
+
 #titulo{
     color: rgb(202, 175, 162);
-    font-size: 60px;
+    font-size: 3rem;
     font-family: "Cormorant Garamond", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -91,7 +89,7 @@ header{
 }
 .nav-links{
     display: flex;
-    gap: 100px;
+    gap: 2rem;
     list-style: none;
     justify-content: space-between;
     padding-left: 0px;
@@ -289,11 +287,11 @@ textarea{
 
 }
 #theme-toggle {
-    width: 35px;
-    height: 35px;
-    bottom: 70px;
+    width: 3rem;
+    height: 3rem;
+    bottom: 4rem;
     position: fixed;
-    right: 40px;
+    right: 1.5rem;
     cursor: pointer;
     z-index: 10;
 }
@@ -448,8 +446,8 @@ footer{
     background-image: url('images/full-monumento.jpg');
     background-attachment: fixed;
     background-size: cover;
-    /* background-position: center; */
-    height: 55vh;
+    background-position: center;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
