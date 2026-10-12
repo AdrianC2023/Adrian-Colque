@@ -31,7 +31,8 @@ body{
     left: 1px;
     margin: 1px;
     display: grid;
-    
+
+
 }
 header{
     display: grid;
@@ -39,6 +40,7 @@ header{
     align-items: center;
     background-color: rgb(134, 90, 24);
     position: relative;
+    width: 100vw;
 }
 
 /* #titulo-pricipal{
@@ -67,13 +69,13 @@ header{
     margin: 0px;
 }
 .img-principal {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin-bottom: 0%;
 
 }
 .slide.active .img-carrousel{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     box-shadow: 5px 5px 15px rgb(167, 114, 35);
     justify-content:space-around;
@@ -86,16 +88,19 @@ header{
     padding: 0px 0px;
     margin-top: -4px;
     background-color: rgba(189, 138, 44, 0.904);
+    width: 100vw;
 }
 .nav-links{
     display: flex;
     gap: 2rem;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-left: 0px;
     font-size: 20px;
     margin: 10px;
-    
+    width: 100vw;
+
 
 }
 .nav-links a {
@@ -103,6 +108,7 @@ header{
     font-weight: bold;
     text-decoration: none;
     font-family: var(--font-principal);
+    width: 100vw;
 }
 
 .btns-nav{
@@ -110,7 +116,7 @@ header{
     gap: 5px;
     justify-content:right;
     font-family: var(--font-principal);
-    
+
 }
 .btns-nav img{
     width: 100%;
@@ -147,12 +153,12 @@ table{
 .seccion-cards{
     box-shadow: 5px 5px 15px rgb(167, 114, 35);
     /* background-color: rgb(240, 238, 215); */
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex; */
     font-family: var(--font-principal);
-    flex-wrap: wrap;
-    
+    /* flex-wrap: wrap; */
+
 }
 
 #Lugares-de-interés{
@@ -199,14 +205,20 @@ table{
 }
 
 .seccion-cards {
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100vw;
+    flex-wrap: wrap;
+    display: flex;
 
 }
 
 .seccion-cards article {
-    
+
     /* display: grid; */
     align-items: flex-start;
+    /* width: 100vw; */
+    flex-wrap: wrap;
+    display: flex;
 
 }
 .seccion-cards article h3 {
@@ -229,12 +241,9 @@ table{
 
     padding-bottom: 150px;
     margin-top: 10px;
-
-    /* align-items: center; */
-    width: 20%;
+    width: 50%;
     height: 350px;
     overflow: hidden;
-    /* justify-content:space-around; */
     border-radius: 5%;
     font-family: var(--font-principal);
 }
@@ -260,9 +269,10 @@ form{
     display:flex;
     flex-direction: column;
     font-family: Arial;
-    width: 400px;
-    margin:50px auto;
+    width: 50%;
+    margin: 50px auto;
     font-family: var(--font-principal);
+
 }
 input{
     margin-bottom: 10px;
@@ -276,7 +286,7 @@ textarea{
 }
 
 .btn-ver-mas{
-    
+
     font-family: var(--font-principal);
     z-index: 999;
 }
@@ -289,9 +299,9 @@ textarea{
 #theme-toggle {
     width: 3rem;
     height: 3rem;
-    bottom: 4rem;
+    bottom: 4.5rem;
     position: fixed;
-    right: 1.5rem;
+    right: 8vw;
     cursor: pointer;
     z-index: 10;
 }
@@ -314,7 +324,7 @@ button{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 8vw;
     padding: 12px 18px;
     border: none;
     border-radius: 8px;
@@ -330,6 +340,7 @@ footer{
     font-family: var(--font-principal);
     color: var(--text-color);
     text-align: center;
+    width: 100vw;
 }
 
 .oculto {
@@ -395,7 +406,7 @@ footer{
     text-align: center;
     padding: 1px 1px;
     background:rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .carrousel-caption h3 {
