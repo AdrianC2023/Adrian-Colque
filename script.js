@@ -120,7 +120,7 @@ window.addEventListener("scroll",function(){
         btnNav.style.display = "block";
     } else {
         btn.style.display = "none";
-        btnNav.style.display = "none";
+        btnNav.style.display = "block";
     }
 });
 
