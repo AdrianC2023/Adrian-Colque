@@ -30,7 +30,6 @@ body{
     padding: 1px;
     left: 1px;
     margin: 1px;
-   
 
 }
 header{
@@ -192,6 +191,16 @@ table{
     font-family: var(--font-principal);
     font-size: 20px;
 }
+#Agencias-y-Guías h2{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 28px;
+}
+#Agencias-y-Guías ul{
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
 
 #Oficina_de_Información_Turistica h2 {
     padding: 10px;
@@ -201,11 +210,12 @@ table{
 
 #Oficina_de_Información_Turistica {
     font-family: var(--font-principal);
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 #Oficina_de_Información_Turistica ul {
     margin: 2px 2px;
+    font-size: 20px;
 }
 
 .seccion-cards article {
@@ -220,7 +230,7 @@ table{
     margin: auto;
     padding: 1px;
     color: rgb(3, 3, 3);
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--font-principal);
     text-align: left;
     color: var(--text-color);
