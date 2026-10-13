@@ -1,5 +1,5 @@
+// --Botón [Ver más]----------
 const botonesVerMas = document.querySelectorAll('.btn-ver-mas');
-
 
 function alternarInformacion(event) {
     const boton = event.target;
@@ -11,7 +11,9 @@ function alternarInformacion(event) {
         boton.textContent = '[Ver menos]';
     }
 }
+//---------------------------
 
+// Boton cambiar 
 botonesVerMas.forEach(function(boton){
     boton.addEventListener('click', alternarInformacion);
 });

@@ -283,6 +283,7 @@ textarea{
 
     font-family: var(--font-principal);
     z-index: 999;
+    margin: 0px;
 }
 
 #theme-toggle-nav {
