@@ -27,7 +27,7 @@ body{
     //font-family: 'Playfair Display', serif */
     font-family: Garamond, serif;
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 1px;
+    /* padding: 4px 4px 4px 4px; */
     left: 1px;
     margin: 1px;
 
@@ -145,6 +145,8 @@ table{
     font-weight: 100;
     color: var(--text-color);
     /* background-color: rgb(188, 170, 206); */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .seccion-cards{
@@ -154,6 +156,7 @@ table{
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    
 
 }
 
