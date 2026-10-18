@@ -11,12 +11,13 @@ function alternarInformacion(event) {
         boton.textContent = '[Ver menos]';
     }
 }
-//---------------------------
 
-// Boton cambiar 
 botonesVerMas.forEach(function(boton){
     boton.addEventListener('click', alternarInformacion);
 });
+//---------------------------
+
+// Boton cambiar 
 
 const boton = document.getElementById('botonCambiar');
 const titulo = document.getElementById('titulo');

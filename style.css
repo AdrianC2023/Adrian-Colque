@@ -8,6 +8,8 @@
     --header-bg:#5d4037;
     --title-color:#6d4c41;
     --font-principal: "Cormorant Garamond", serif;
+    --text-color-links: #0863f5;
+
 }
 body.dark-mode {
     --bg-color: #121212;
@@ -18,18 +20,16 @@ body.dark-mode {
     --button-text: #000000;
     --header-bg:#1f1f1f;
     --title-color:#bb86fc;
+    --text-color-links: #598bdb;
 }
 
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* //font-family: Arial; sans-serif
-    //font-family: 'Playfair Display', serif */
     font-family: Garamond, serif;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* padding: 4px 4px 4px 4px; */
-    left: 1px;
-    margin: 1px;
+    left: 10px;
+    margin: 10px;
 
 }
 header{
@@ -40,13 +40,6 @@ header{
     position: relative;
     width: 100%;
 }
-
-/* #titulo-pricipal{
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 0px 0px 0px 180px;
-} */
 
 #titulo-pricipal h1{
     align-items: center;
@@ -154,11 +147,49 @@ table{
     font-family: var(--font-principal);
     justify-content: space-around;
     width: 100%;
+    height: auto;
     flex-wrap: wrap;
     display: flex;
-    
-
 }
+
+.header-cards {
+    background-color: rgba(210, 105, 30, 0);
+}
+
+
+.card{
+
+    padding-bottom: 8rem;
+    margin-top: 0.8rem;
+    width: 190px;
+    min-height: 350px;
+    max-height: auto;
+    /* overflow: hidden; */
+    border-radius: 5%;
+    font-family: var(--font-principal);
+
+    align-items:center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+    .card img{
+    padding: 0px;
+    margin-top: 12px;
+    width: 85%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
+    border-radius: 5%;
+    }
+
+    .card:hover .img-card{
+
+        object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
+        position: relative;   /* Se posiciona sobre el resto del contenido */
+        z-index: 10;         /* Se asegura de estar por encima de todo */
+    }
 
 #Lugares-de-interés{
     padding: 10px;
@@ -204,6 +235,10 @@ table{
     font-family: var(--font-principal);
     font-size: 20px;
 }
+#Agencias-y-Guías ul li dl dd a{
+    color: var(--text-color-links);
+}
+
 
 #Oficina_de_Información_Turistica h2 {
     padding: 10px;
@@ -220,57 +255,19 @@ table{
     margin: 2px 2px;
     font-size: 20px;
 }
-
-.seccion-cards article {
-    display: grid;
-    align-items:center;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
+#Oficina_de_Información_Turistica ul li a{
+    color: var(--text-color-links);
 }
 .seccion-cards article h3 {
-    text-align: left;
+    text-align: center;
     margin: auto;
     padding: 1px;
     color: rgb(3, 3, 3);
-    font-size: 18px;
+    font-size: 21px;
     font-family: var(--font-principal);
-    text-align: left;
     color: var(--text-color);
     font-family: var(--font-principal);
 }
-
-.header-cards {
-    background-color: rgba(210, 105, 30, 0)
-}
-
-.card{
-
-    padding-bottom: 9rem;
-    margin-top: 0.8rem;
-    width: 190px;
-    height: 350px;
-    overflow: hidden;
-    border-radius: 5%;
-    font-family: var(--font-principal);
-}
-    .card img{
-    padding: 0px;
-    margin-top: 12px;
-    width: 85%;
-    height: 60%;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 5px 5px 15px rgb(167, 114, 35);
-    border-radius: 5%;
-    }
-
-    .card:hover .img-card{
-
-        object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
-        position: relative;   /* Se posiciona sobre el resto del contenido */
-        z-index: 10;         /* Se asegura de estar por encima de todo */
-    }
 
 form{
     display:flex;
@@ -293,10 +290,11 @@ textarea{
 }
 
 .btn-ver-mas{
-
     font-family: var(--font-principal);
     z-index: 999;
     margin: 0px;
+    border-radius: 15%;
+    font-size: 1rem ;
 }
 
 #theme-toggle-nav {
