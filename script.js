@@ -25,9 +25,9 @@ let contador = 0;
 boton.addEventListener('click', function() {
     contador++;
     if (contador === 1) {
-        titulo.textContent = "Bienvenidos";
+        titulo.textContent = "Aquí comienza";
     } else if (contador === 2) {
-        titulo.textContent = "Patrimonio de la Humanidad";
+        titulo.textContent = "La Aventura";
     } else if (contador === 3) {
         titulo.textContent = "Quebrada de Humahuaca";
     }
