@@ -1,3 +1,6 @@
+/*==========================================================================
+   VARIABLES
+  ========================================================================== */
 :root {
     --bg-color: #f5efe6;
     --text-color: #333333;
@@ -9,8 +12,13 @@
     --title-color:#6d4c41;
     --font-principal: "Cormorant Garamond", serif;
     --text-color-links: #0863f5;
-
+    --size-h2: 30px;
 }
+
+/*==========================================================================
+   MODO OSCURO
+  ========================================================================== */
+
 body.dark-mode {
     --bg-color: #121212;
     --text-color: #e0e0e0;
@@ -23,6 +31,11 @@ body.dark-mode {
     --text-color-links: #598bdb;
 }
 
+/*
+=========================================================================
+  CUERPO DE LA PÁGINA
+=========================================================================
+*/
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -30,447 +43,13 @@ body{
     transition: background-color 0.3s ease, color 0.3s ease;
     left: 5px;
     margin: 5px;
-
-}
-header{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    background-color: rgb(134, 90, 24);
-    position: relative;
-    width: 100%;
 }
 
-#titulo-pricipal h1{
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
-#titulo{
-    color: rgb(202, 175, 162);
-    font-size: 3rem;
-    font-family: "Cormorant Garamond", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    text-align: center;
-
-    /* background-color: rgb(146, 85, 6); */
-    margin: 0px;
-}
-.img-principal {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0%;
-
-}
-.slide.active .img-carrousel{
-    width: 100vw;
-    height: 100%;
-    box-shadow: 5px 5px 15px rgb(167, 114, 35);
-    justify-content:space-around;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 0px;
-    margin-top: -4px;
-    background-color: rgba(189, 138, 44, 0.904);
-    width: 100%;
-    flex-wrap: wrap;
-}
-.nav-links{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-left: 0px;
-    font-size: 20px;
-    margin: 10px;
-    width: 100vw;
-}
-.nav-links a {
-    color: var(--text-color);
-    font-weight: bold;
-    text-decoration: none;
-    font-family: var(--font-principal);
-    width: 100vw;
-    text-decoration:underline;
-}
-
-.btns-nav{
-    display: flex;
-    gap: 5px;
-    justify-content:right;
-    font-family: var(--font-principal);
-}
-.btns-nav img{
-    width: 100%;
-    height: 100%;
-}
-
-a:hover{
-    color: rgb(170, 100, 50);
-    cursor:pointer;
-}
-.seccion-info{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    font-family: var(--font-principal);
-}
-
-
-table{
-    background-color: deeppink;
-    font-family: var(--font-principal);
-}
-.descripcion{
-    font-family: var(--font-principal);
-    color: black;
-    font-size: 20px;
-    text-align:left;
-    font-style: normal;
-    font-weight: 100;
-    color: var(--text-color);
-    /* background-color: rgb(188, 170, 206); */
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.seccion-cards{
-    box-shadow: 5px 5px 15px rgb(167, 114, 35);
-    font-family: var(--font-principal);
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    display: flex;
-    border-radius: 40px;
-
-}
-
-.header-cards {
-    background-color: rgba(210, 105, 30, 0);
-}
-.header-cards h3 {
-    max-height: 20px;
-}
-
-
-.card{
-
-    padding-bottom: 8rem;
-    margin-top: 0.8rem;
-    width: 182px;
-    min-height: 350px;
-    max-height: auto;
-    /* overflow: hidden; */
-    border-radius: 5%;
-    font-family: var(--font-principal);
-
-    align-items:center;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-}
-    .card img{
-    padding: 0px;
-    margin-top: 12px;
-    width: 85%;
-    height: 60%;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 5px 5px 15px rgb(167, 114, 35);
-    border-radius: 5%;
-    }
-
-    .card:hover .img-card{
-
-        object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
-        position: relative;   /* Se posiciona sobre el resto del contenido */
-        z-index: 10;         /* Se asegura de estar por encima de todo */
-    }
-
-#Lugares-de-interés{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 30px;
-}
-
-#Museos{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 30px;
-}
-
-#Gastronomía{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 30px;
-}
-
-#Viñedos{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 30px;
-}
-
-#Agencias-y-Guías{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 20px;
-}
-#Agencias-y-Guías h2{
-    padding: 10px;
-    margin: auto;
-    font-family: var(--font-principal);
-    font-size: 28px;
-}
-#Agencias-y-Guías ul{
-    font-family: var(--font-principal);
-    font-size: 20px;
-}
-#Agencias-y-Guías ul li dl dd a{
-    color: var(--text-color-links);
-}
-
-
-#Oficina_de_Información_Turistica h2 {
-    padding: 10px;
-    margin: auto;
-    font-size: 28px;
-}
-
-#Oficina_de_Información_Turistica {
-    font-family: var(--font-principal);
-    /* font-size: 18px; */
-}
-
-#Oficina_de_Información_Turistica ul {
-    margin: 2px 2px;
-    font-size: 20px;
-}
-#Oficina_de_Información_Turistica ul li a{
-    color: var(--text-color-links);
-}
-.seccion-cards article h3 {
-    text-align: center;
-    margin: auto;
-    padding: 1px;
-    color: rgb(3, 3, 3);
-    font-size: 21px;
-    font-family: var(--font-principal);
-    color: var(--text-color);
-    font-family: var(--font-principal);
-}
-
-form{
-    display:flex;
-    flex-direction: column;
-    font-family: Arial;
-    width: 350px;
-    margin: 50px auto;
-    font-family: var(--font-principal);
-    font-size: 21px;
-
-}
-input{
-    margin-bottom: 10px;
-    padding: 5px;
-    font-family: var(--font-principal);
-    font-size: 16px;
-    font-style: italic;
-}
-textarea{
-    margin-bottom: 10px;
-    padding: 50px;
-    font-family: var(--font-principal);
-}
-
-.btn-ver-mas{
-    font-family: var(--font-principal);
-    z-index: 999;
-    margin: 0px;
-    border-radius: 15%;
-    font-size: 1rem ;
-}
-
-#theme-toggle-nav {
-    width: 30px;
-    height: 30px;
-
-}
-#theme-toggle {
-    width: 3rem;
-    height: 3rem;
-    bottom: 5rem;
-    position: fixed;
-    right: 2vw;
-    cursor: pointer;
-    z-index: 9999;
-    border-radius: 100%;
-    border: none;
-    
-}
-
-button{
-    padding:5px;
-    margin-top: 20px;
-    font-family: var(--font-principal);
-}
-.btns-font-size {
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    justify-content:space-between;
-    display: grid;
-    grid-auto-flow: column;
-    align-content: center;
-}
-
-#volverArriba {
-    display: none;
-    position: fixed;
-    bottom: 33px;
-    right: 2vw;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(22, 21, 21);
-    font-family: var(--font-principal);
-    z-index: 9999;
-}
-
-footer{
-    background-color: rgb(190, 190, 190);
-    font-family: var(--font-principal);
-    color: var(--text-color);
-    text-align: center;
-    width: 100%;
-}
-
-.oculto {
-    display: none;
-}
-
-/* Entrega 3 ejercicio 3 (Carrousel) */
-
-.carrousel-section {
-    margin-top: -20px;
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
-}
-
-.carrousel-container{
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 12px;
-    /* box-shadow: 0 8px 20px rgba(0,0,0.25); */
-    background-color: #000000;
-}
-
-.carrousel-slides{
-    position: relative;
-    height: 450px;
-}
-
-.slide{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide.active{
-    opacity: 1;
-    z-index: 1;
-}
-
-.slide img{
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
-    background: var(--bg-color);
-}
-
-.carrousel-caption{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: black;
-    color: #ffffff;
-    text-align: center;
-    padding: 1px 1px;
-    background:rgba(0, 0, 0, 0.5);
-
-}
-
-.carrousel-caption h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: #ffffff;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    padding: 0px 15px;
-    font-family: var(--font-principal);
-}
-
-.carrousel-caption p{
-    font-size: 0.95rem;
-    color: #ddd;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    padding: 0px 15px;
-    font-family: var(--font-principal);
-}
-
-.carrousel-btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    padding: 12px 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20%;
-    z-index: 2;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.carrousel-btn:hover{
-    background-color: rgba(0, 0, 0, 0.85);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.carrousel-btn.prev { left: 15px;}
-.carrousel-btn.next { right: 15px;}
-
-/* Imagen fija */
-
+/*
+=========================================================================
+   IMÁGEN FIJA
+=========================================================================
+*/
 .portada {
     background-image: url('images/full-monumento.jpg');
     background-attachment: fixed;
@@ -518,4 +97,483 @@ footer{
     display: flex;
     justify-content: flex-end;
     padding: 15px 2rem;
+}
+
+/*
+=========================================================================
+   ENCABEZADO
+=========================================================================
+*/
+header{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: rgb(134, 90, 24);
+    position: relative;
+    width: 100%;
+}
+
+#titulo{
+    color: rgb(202, 175, 162);
+    font-size: 3rem;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*
+=========================================================================
+   IMÁGEN PRINCIPAL
+=========================================================================
+*/
+.img-principal {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+}
+
+/*
+=========================================================================
+   BARRA DE NAVEGACIÓN
+=========================================================================
+*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px;
+    margin-top: -4px;
+    background-color: rgba(189, 138, 44, 0.904);
+    width: 100%;
+    flex-wrap: wrap;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    font-size: 20px;
+    margin: 10px;
+    width: 100vw;
+}
+.nav-links a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    width: 100vw;
+    text-decoration:underline;
+}
+
+.btns-nav{
+    display: flex;
+    gap: 5px;
+    justify-content:right;
+    font-family: var(--font-principal);
+}
+.btns-nav img{
+    width: 100%;
+    height: 100%;
+}
+
+a:hover{
+    color: rgb(170, 100, 50);
+    cursor:pointer;
+}
+
+/*
+=========================================================================
+   CARROUSEL
+=========================================================================
+*/
+/* Entrega 3 ejercicio 3 (Carrousel) */
+.carrousel-section {
+    margin-top: -20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.carrousel-container{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    /* box-shadow: 0 8px 20px rgba(0,0,0.25); */
+    background-color: #000000;
+}
+
+.carrousel-slides{
+    position: relative;
+    height: 450px;
+}
+
+.slide.active .img-carrousel{
+    width: 100vw;
+    height: 100%;
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
+    justify-content:space-around;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    background: var(--bg-color);
+}
+
+.carrousel-caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px 1px;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.carrousel-caption h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding: 0px 15px;
+    font-family: var(--font-principal);
+}
+
+.carrousel-caption p{
+    font-size: 0.95rem;
+    color: #ddd;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding: 0px 15px;
+    font-family: var(--font-principal);
+}
+
+.carrousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    z-index: 2;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.carrousel-btn:hover{
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrousel-btn.prev { left: 15px;}
+.carrousel-btn.next { right: 15px;}
+
+
+/* .seccion-info{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: var(--font-principal);
+    background-color: red;
+} */
+
+/*
+=========================================================================
+   DESCRIPCIÓN DE LA PÁGINA
+=========================================================================
+*/
+.descripcion{
+    font-family: var(--font-principal);
+    color: black;
+    font-size: 20px;
+    text-align:left;
+    font-style: normal;
+    font-weight: 100;
+    color: var(--text-color);
+    /* background-color: rgb(188, 170, 206); */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+=========================================================================
+   SECCIONES CON TARJETAS
+=========================================================================
+*/
+.seccion-cards{
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
+    font-family: var(--font-principal);
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 40px;
+}
+
+.header-cards {
+    background-color: rgba(210, 105, 30, 0);
+}
+
+.header-cards h3 {
+    max-height: 20px;
+}
+
+.card{
+    padding-bottom: 8rem;
+    margin-top: 0.8rem;
+    width: 182px;
+    min-height: 350px;
+    max-height: auto;
+    /* overflow: hidden; */
+    border-radius: 5%;
+    font-family: var(--font-principal);
+
+    align-items:center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .card img{
+    padding: 0px;
+    margin-top: 12px;
+    width: 85%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 5px 5px 15px rgb(167, 114, 35);
+    border-radius: 5%;
+    }
+
+    .card:hover .img-card{
+
+        object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
+        position: relative;   /* Se posiciona sobre el resto del contenido */
+        z-index: 10;         /* Se asegura de estar por encima de todo */
+    }
+
+.seccion-cards article h3 {
+    text-align: center;
+    margin: auto;
+    padding: 1px;
+    color: rgb(3, 3, 3);
+    font-size: 21px;
+    font-family: var(--font-principal);
+    color: var(--text-color);
+    font-family: var(--font-principal);
+}
+
+#Lugares-de-interés{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 30px;
+}
+
+#Museos{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 30px;
+}
+
+#Gastronomía{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 30px;
+}
+
+#Viñedos{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 30px;
+}
+
+#Agencias-y-Guías{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 20px;
+}
+
+#Agencias-y-Guías h2{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: var(--size-h2)
+}
+
+#Agencias-y-Guías ul{
+    font-family: var(--font-principal);
+    font-size: 26px;
+}
+
+#Agencias-y-Guías ul li dl dd a{
+    color: var(--text-color-links);
+    font-size: 21px;
+}
+
+
+#Oficina_de_Información_Turistica h2 {
+    padding: 10px;
+    margin: auto;
+    font-size: 28px;
+}
+
+#Oficina_de_Información_Turistica {
+    font-family: var(--font-principal);
+    /* font-size: 18px; */
+}
+
+#Oficina_de_Información_Turistica ul {
+    margin: 2px 2px;
+    font-size: 20px;
+}
+
+#Oficina_de_Información_Turistica ul li a{
+    color: var(--text-color-links);
+}
+
+/*
+=========================================================================
+   FORMULARIO
+=========================================================================
+*/
+form{
+    display:flex;
+    flex-direction: column;
+    font-family: Arial;
+    width: 350px;
+    margin: 50px auto;
+    font-family: var(--font-principal);
+    font-size: 21px;
+}
+
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-style: italic;
+}
+
+textarea{
+    margin-bottom: 10px;
+    padding: 50px;
+    font-family: var(--font-principal);
+}
+
+/*
+=========================================================================
+   BOTONES
+=========================================================================
+*/
+.btn-ver-mas{
+    font-family: var(--font-principal);
+    z-index: 999;
+    margin: 0px;
+    border-radius: 15%;
+    font-size: 1rem ;
+}
+
+#theme-toggle-nav {
+    width: 30px;
+    height: 30px;
+}
+
+#theme-toggle {
+    width: 3rem;
+    height: 3rem;
+    bottom: 5rem;
+    position: fixed;
+    right: 2vw;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 100%;
+    border: none;
+}
+
+button{
+    padding:5px;
+    margin-top: 20px;
+    font-family: var(--font-principal);
+}
+.btns-font-size {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    justify-content:space-between;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+#volverArriba {
+    display: none;
+    position: fixed;
+    bottom: 33px;
+    right: 2vw;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(22, 21, 21);
+    font-family: var(--font-principal);
+    z-index: 9999;
+}
+
+/*
+=========================================================================
+   PIE DE PÁGINA
+=========================================================================
+*/
+footer{
+    background-color: rgb(190, 190, 190);
+    font-family: var(--font-principal);
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+}
+
+.oculto {
+    display: none;
 }
