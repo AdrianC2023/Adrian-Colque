@@ -63,30 +63,32 @@ aumentar.addEventListener("click", function() {
 
 const formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit", function(event){
-    
-    const nombre = document.getElementById("nombre").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const fecnac = document.getElementById("fecnac").value.trim();
-    const mensaje = document.getElementById("mensaje").value.trim();
-    const resultado = document.getElementById("resultado");
-    const infoedad = document.getElementById("infoedad");
-    const fecactual = new Date();
-    event.preventDefault();
-    
+if (formulario) {
+    formulario.addEventListener("submit", function(event){
+        
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const fecnac = document.getElementById("fecnac").value.trim();
+        const mensaje = document.getElementById("mensaje").value.trim();
+        const resultado = document.getElementById("resultado");
+        const infoedad = document.getElementById("infoedad");
+        const fecactual = new Date();
+        event.preventDefault();
+        
 
-    if (nombre==="" || email==="" || fecnac==="" || mensaje===""){
-        resultado.textContent="¡Completa todos los campos!";
-    } else {
-        let años = fecactual.getFullYear() - new Date(fecnac).getFullYear();
-        if(fecactual.getMonth() < new Date(fecnac).getMonth()){ //falta validar si es el mismo mes y el dia es menor
-            años--;
-        }
-        infoedad.textContent="Tu edad es: " + años + " años";
-        resultado.textContent="Enviado correctamente";
-        formulario.reset();
-    }    
-});
+        if (nombre==="" || email==="" || fecnac==="" || mensaje===""){
+            resultado.textContent="¡Completa todos los campos!";
+        } else {
+            let años = fecactual.getFullYear() - new Date(fecnac).getFullYear();
+            if(fecactual.getMonth() < new Date(fecnac).getMonth()){ //falta validar si es el mismo mes y el dia es menor
+                años--;
+            }
+            infoedad.textContent="Tu edad es: " + años + " años";
+            resultado.textContent="Enviado correctamente";
+            formulario.reset();
+        }    
+    });
+}
 
 //Entrega 4 parte 4 (Modo oscuro)
 
@@ -113,22 +115,21 @@ toggleBtnNav.addEventListener("click", function() {
 
 //Entrega 3 ejercicio 2 (boton vovler arriba)
 
-const btn = document.getElementById("volverArriba");
+const btn_volverArriba = document.getElementById("volverArriba");
 const btnNav = document.getElementById("theme-toggle");
 
 
 window.addEventListener("scroll",function(){
     if (window.scrollY > 300){
-        btn.style.display = "block";
+        btn_volverArriba.style.display = "block";
         btnNav.style.display = "block";
     } else {
-        btn.style.display = "none";
+        btn_volverArriba.style.display = "none";
         btnNav.style.display = "block";
     }
 });
 
-
-btn.addEventListener("click",function(){
+btn_volverArriba.addEventListener("click",function(){
     window.scrollTo({
         top:0,
         behavior: "smooth"
