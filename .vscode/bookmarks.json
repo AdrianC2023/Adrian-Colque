@@ -4,16 +4,6 @@
 			"path": "style.css",
 			"bookmarks": [
 				{
-					"line": 2,
-					"column": 12,
-					"label": ""
-				},
-				{
-					"line": 203,
-					"column": 12,
-					"label": ""
-				},
-				{
 					"line": 616,
 					"column": 7,
 					"label": ""
@@ -24,13 +14,18 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 41,
-					"column": 30,
+					"line": 599,
+					"column": 15,
 					"label": ""
-				},
+				}
+			]
+		},
+		{
+			"path": "script.js",
+			"bookmarks": [
 				{
-					"line": 62,
-					"column": 20,
+					"line": 0,
+					"column": 30,
 					"label": ""
 				}
 			]
