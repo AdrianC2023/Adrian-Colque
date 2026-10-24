@@ -6,15 +6,17 @@
 :root {
     --bg-color: #f5efe6;
     --text-color: #333333;
+    --text-color-title-principal: rgb(202, 175, 162);
     --card-bg: #ffffff;
     --article-bg: #fff8e1;
     --button-bg:#2196f3;
     --button-text: #ffffff;
-    --header-bg:#5d4037;
+    --header-bg:rgb(134, 90, 24);
     --title-color:#6d4c41;
     --font-principal: "Cormorant Garamond", serif;
     --text-color-links: #0863f5;
     --size-h2: 30px;
+    --size-h3: 21px;
     --size-p: 20px;
     --size-card: 18px;
 }
@@ -27,6 +29,7 @@
 body.dark-mode {
     --bg-color: #121212;
     --text-color: #e0e0e0;
+    --text-color-title-principal: #e0e0e0;
     --card-bg: #1e1e1e;
     --article-bg: #2a2a2a;
     --button-bg:#bb86fc;
@@ -266,10 +269,12 @@ a:hover{
     text-align: center;
     padding: 1px 1px;
     background:rgba(0, 0, 0, 0.5);
+    font-size: var(--size-h3);
 }
 
 .carrousel-caption h3 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: var(--size-h3);
     margin-bottom: 5px;
     color: #ffffff;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -278,8 +283,9 @@ a:hover{
     font-family: var(--font-principal);
 }
 
-.carrousel-caption p{
-    font-size: 0.95rem;
+.carrousel-caption p {
+    /* font-size: 0.95rem; */
+    font-size: var(--size-p);
     color: #ddd;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
@@ -287,7 +293,7 @@ a:hover{
     font-family: var(--font-principal);
 }
 
-.carrousel-btn{
+.carrousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -302,7 +308,7 @@ a:hover{
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.carrousel-btn:hover{
+.carrousel-btn:hover {
     background-color: rgba(0, 0, 0, 0.85);
     transform: translateY(-50%) scale(1.1);
 }
@@ -324,7 +330,7 @@ a:hover{
    DESCRIPCIÓN DE LA PÁGINA
 =========================================================================
 */
-.descripcion{
+.descripcion {
     font-family: var(--font-principal);
     color: black;
     font-size: 20px;
@@ -342,7 +348,7 @@ a:hover{
    SECCIONES CON TARJETAS
 =========================================================================
 */
-.seccion-cards{
+.seccion-cards {
     box-shadow: 5px 5px 15px rgb(167, 114, 35);
     font-family: var(--font-principal);
     justify-content: space-around;
@@ -361,7 +367,7 @@ a:hover{
     max-height: 20px;
 }
 
-.card{
+.card {
     padding-bottom: 8rem;
     margin-top: 0.8rem;
     width: 176px;
@@ -378,7 +384,7 @@ a:hover{
     justify-content: space-around;
 }
 
-    .card img{
+    .card img {
     padding: 0px;
     margin-top: 12px;
     width: 85%;
@@ -389,7 +395,7 @@ a:hover{
     border-radius: 5%;
     }
 
-    .card:hover .img-card{
+    .card:hover .img-card {
 
         object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
         position: relative;   /* Se posiciona sobre el resto del contenido */
@@ -407,7 +413,7 @@ a:hover{
     font-family: var(--font-principal);
 }
 
-.tituloSecciones{
+.tituloSecciones {
     padding: 10px;
     margin: auto;
     font-family: var(--font-principal);
@@ -418,6 +424,12 @@ a:hover{
 #age-y-ofi {
     font-size: var(--size-p);
 }
+
+#age-y-ofi a {
+    color: var(--text-color-links);
+}
+
+
 /* #Lugares-de-interés{
     padding: 10px;
     margin: auto;
@@ -499,7 +511,7 @@ a:hover{
    FORMULARIO
 =========================================================================
 */
-form{
+form {
     display:flex;
     flex-direction: column;
     font-family: Arial;
@@ -509,7 +521,7 @@ form{
     font-size: 21px;
 }
 
-input{
+input {
     margin-bottom: 10px;
     padding: 5px;
     font-family: var(--font-principal);
@@ -517,7 +529,7 @@ input{
     font-style: italic;
 }
 
-textarea{
+textarea {
     margin-bottom: 10px;
     padding: 50px;
     font-family: var(--font-principal);
@@ -528,7 +540,7 @@ textarea{
    BOTONES
 =========================================================================
 */
-.btn-ver-mas{
+.btn-ver-mas {
     font-family: var(--font-principal);
     z-index: 999;
     margin: 0px;
@@ -553,7 +565,7 @@ textarea{
     border: none;
 }
 
-button{
+button {
     padding:5px;
     margin-top: 20px;
     font-family: var(--font-principal);
@@ -588,8 +600,8 @@ button{
    PIE DE PÁGINA
 =========================================================================
 */
-footer{
-    background-color: rgb(190, 190, 190);
+footer {
+    background-color: var(--header-bg);
     font-family: var(--font-principal);
     color: var(--text-color);
     text-align: center;
@@ -619,7 +631,7 @@ footer{
     margin-bottom: 80px;
 }
 
-#mapa p{
+#mapa p {
     font-family: var(--font-principal);
     margin: 0px 10%;
     font-size: var(--size-p);
