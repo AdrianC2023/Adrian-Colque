@@ -16,6 +16,7 @@
     --text-color-links: #0863f5;
     --size-h2: 30px;
     --size-p: 20px;
+    --size-card: 18px;
 }
 
 /*
@@ -47,6 +48,7 @@ body{
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 10px auto;
     width: 96%;
+    font-family: var(--font-principal);
 }
 
 /*
@@ -368,6 +370,7 @@ a:hover{
     /* overflow: hidden; */
     border-radius: 5%;
     font-family: var(--font-principal);
+    font-size: var(--size-card);
 
     align-items:center;
     flex-wrap: wrap;
@@ -404,11 +407,23 @@ a:hover{
     font-family: var(--font-principal);
 }
 
-#Lugares-de-interés{
+.tituloSecciones{
     padding: 10px;
     margin: auto;
     font-family: var(--font-principal);
     font-size: 30px;
+    text-decoration: underline;
+}
+
+#age-y-ofi {
+    font-size: var(--size-p);
+}
+/* #Lugares-de-interés{
+    padding: 10px;
+    margin: auto;
+    font-family: var(--font-principal);
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 #Museos{
@@ -437,9 +452,9 @@ a:hover{
     margin: auto;
     font-family: var(--font-principal);
     font-size: 20px;
-}
+} */
 
-#Agencias-y-Guías h2{
+/* #Agencias-y-Guías h2{
     padding: 10px;
     margin: auto;
     font-family: var(--font-principal);
@@ -455,10 +470,10 @@ a:hover{
 #Agencias-y-Guías ul li dl dd a{
     color: var(--text-color-links);
     font-size: 21px;
-}
+} */
 
 
-#Oficina_de_Información_Turistica h2 {
+/* #Oficina_de_Información_Turistica h2 {
     padding: 10px;
     margin: auto;
     font-size: 28px;
@@ -466,7 +481,7 @@ a:hover{
 
 #Oficina_de_Información_Turistica {
     font-family: var(--font-principal);
-    /* font-size: 18px; */
+    
 }
 
 #Oficina_de_Información_Turistica ul {
@@ -476,7 +491,8 @@ a:hover{
 
 #Oficina_de_Información_Turistica ul li a{
     color: var(--text-color-links);
-}
+} */
+
 
 /*
 =========================================================================
@@ -605,13 +621,14 @@ footer{
 
 #mapa p{
     font-family: var(--font-principal);
-    display: flex;
     margin: 0px 10%;
     font-size: var(--size-p);
+
 }
 
 #mapa h2 {
     font-family: var(--font-principal);
     font-size: var(--size-h2);
     text-align: center;
+    text-decoration: underline;
 }
