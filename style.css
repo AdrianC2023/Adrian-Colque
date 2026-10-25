@@ -118,7 +118,7 @@ header{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    background-color: var(--header-bg);
+    background-color: rgba(134, 90, 24, 1);
     position: relative;
     width: 100%;
 }
@@ -785,15 +785,19 @@ footer {
    CITA
 =========================================================================
 */
-blockquote {
+.cita {
+    max-width: 350px;
+    margin: 0px auto;
     font-size: var(--size-p);
-    width: auto;
-    text-align: left;
 }
 
-cite {
+.cita blockquote {
+    margin: 0px;
+}
+
+.cita cite {
     font-size: var(--size-p);
     display: flex;
     justify-content: right;
-    margin-right: 10px;
+    margin-top: 30px;
 }
