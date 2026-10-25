@@ -5,14 +5,15 @@
 */
 :root {
     --bg-color: #f5efe6;
-    --text-color: #333333;
+    --text-color: #000000;
     --text-color-title-principal: rgb(202, 175, 162);
     --card-bg: #ffffff;
     --article-bg: #fff8e1;
     --button-bg:#2196f3;
     --button-text: #ffffff;
     --header-bg:rgb(134, 90, 24);
-    --title-color:#6d4c41;
+    --navbar-color: rgba(189, 138, 44, 1);
+    --title-color: #6d4c41;
     --font-principal: "Cormorant Garamond", serif;
     --text-color-links: #0863f5;
     --size-h2: 30px;
@@ -117,7 +118,7 @@ header{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
-    background-color: rgb(134, 90, 24);
+    background-color: var(--header-bg);
     position: relative;
     width: 100%;
 }
@@ -152,7 +153,7 @@ header{
    BARRA DE NAVEGACIÓN
 =========================================================================
 */
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -197,15 +198,139 @@ header{
 a:hover{
     color: rgb(170, 100, 50);
     cursor:pointer;
-}
+} */
 
 /*
 =========================================================================
    MENU HAMBURGUESA PARA CELULARES
 =========================================================================
 */
+/* Reset básico */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+} */
 
+/* Estilos generales de la Barra de Navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  background-color: var(--navbar-color);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 38px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo p {
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-size: var(--size-p);
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Botón Hamburguesa (Oculto en pantallas grandes) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- ESTILOS RESPONSIVOS (Mobile First / Breakpoint en 768px) --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Mostrar el botón en celulares */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--navbar-color);
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Clase que activa la visibilidad con JS */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Animación opcional del botón hamburguesa a 'X' */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
+}
+
+/* Selector que detecta automáticamente cualquier elemento que sea el destino de un enlace */
+:target {
+  scroll-margin-top: 70px; 
+}
 
 
 /*
@@ -615,6 +740,7 @@ footer {
     color: var(--text-color);
     text-align: center;
     width: 100%;
+    margin-top: 120px;
 }
 
 .oculto {
@@ -652,4 +778,22 @@ footer {
     font-size: var(--size-h2);
     text-align: center;
     text-decoration: underline;
+}
+
+/*
+=========================================================================
+   CITA
+=========================================================================
+*/
+blockquote {
+    font-size: var(--size-p);
+    width: auto;
+    text-align: left;
+}
+
+cite {
+    font-size: var(--size-p);
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
 }

@@ -1,3 +1,26 @@
+//MENU HAMBURGUESA PARA CELULARES
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const navItems = navLinks.querySelectorAll('a');
+
+  // Alternar apertura/cierre del menú al presionar el botón hamburguesa
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+
+  // Ocultar el menú automáticamente al hacer clic en cualquier enlace
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+});
+
+
+
 // --Botón [Ver más]----------
 const botonesVerMas = document.querySelectorAll('.btn-ver-mas');
 

@@ -4,12 +4,27 @@
 			"path": "style.css",
 			"bookmarks": [
 				{
-					"line": 203,
+					"line": 204,
 					"column": 34,
 					"label": ""
 				},
 				{
-					"line": 625,
+					"line": 644,
+					"column": 13,
+					"label": ""
+				},
+				{
+					"line": 733,
+					"column": 16,
+					"label": ""
+				},
+				{
+					"line": 751,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 784,
 					"column": 7,
 					"label": ""
 				}
@@ -29,7 +44,7 @@
 					"label": ""
 				},
 				{
-					"line": 606,
+					"line": 630,
 					"column": 15,
 					"label": ""
 				}
@@ -39,7 +54,7 @@
 			"path": "script.js",
 			"bookmarks": [
 				{
-					"line": 0,
+					"line": 23,
 					"column": 30,
 					"label": ""
 				}
