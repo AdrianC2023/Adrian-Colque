@@ -271,7 +271,8 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin: 5px;
+  padding: 2px;
 }
 
 .menu-toggle .bar {
@@ -534,6 +535,10 @@ html {
         object-fit: contain;  /* Cambia a 'contain' para mostrarla completa sin recortes */
         position: relative;   /* Se posiciona sobre el resto del contenido */
         z-index: 10;         /* Se asegura de estar por encima de todo */
+    }
+
+    .card a {
+        color: var(--text-color-links);
     }
 
 .seccion-cards article h3 {
